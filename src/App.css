@@ -1,0 +1,212 @@
+.cardImg{
+    width: auto;
+    height: 150px;
+    object-fit: contain;
+    margin: 35px 0;
+}
+
+.cardProduct{
+    height: 350px;
+    
+}
+
+.imgProductDetail{
+    height: 200px;
+    object-fit: contain;
+}
+
+.logo{
+    width: 100px;
+    height: auto;
+}
+
+.homeTextNav, .purchasesTextNav, .loginTextNav{
+    color: white;
+}
+
+.navbar-toggler:hover{
+    background-color: #747474;
+}
+
+.navbar-toggler:hover{
+    outline: none ;
+    border-radius: 3px;
+    border: none;
+}
+
+.categoryList{
+    margin-top: 30px;
+}
+
+.categoryTitle{
+    color: #ffffff;
+    font-weight: bolder;
+    background-color: rgb(52, 58, 64);
+    padding: 10px 15px;
+}
+
+.list-group-item:hover{
+    cursor: pointer;
+    background-color: #e6ad34;
+    color: #ffffff;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    border: none;
+}
+
+.d-flex{
+    margin: 30px 0;
+}
+
+.form-control{
+    background-color: #ffffff;
+    border: solid rgb(196, 196, 196) 1px;
+}
+
+.btn-secondary{
+    background-color: #e6ad34;
+}
+
+.cardProduct:hover{
+    box-shadow: 1px 8px 20px grey;
+    -webkit-transition:  box-shadow .5s ease-in;
+    cursor: pointer;
+}
+
+.d-block{
+    height: 300px;
+    object-fit: contain;
+}
+
+.productsDetailContainer{
+    margin-top: 5rem;
+}
+
+.productDetailText{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.productDetailPrice{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.productDescription{
+    font-size: 13px;
+}
+
+.productDetailPrice h5{
+    color: #747474;
+}
+
+.buttonDecrement, .buttonIncrement{
+    width: 40px;
+    border: solid #cccbcb 1px;
+    background-color: #ececec;
+    outline: none;
+    font-size: 20px;
+}
+
+.count{
+    display: block;
+    border: solid #cccbcb 1px;
+    height: 34px;
+    width: 40px;
+    text-align: center;
+}
+
+.counter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.addButton{
+    border: none;
+    background-color: #e6ad34;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.productsSugested{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin:60px 0;
+}
+
+.cardProductSugested{
+    height: 350px;
+    width: 250px;
+}
+
+.productsSugestedTitle{
+    margin-left: 8%;
+    margin-top: 50px;
+}
+
+.purchaseProductTitle, .purchaseProductPrice, .purchaseProductQuantity{
+    margin: 0;
+    margin-left: 20%;
+}
+
+.purchaseProductInfo{
+    display: grid;
+    grid-template-columns: 45% 25% 30%;
+    margin: 20px 0;
+}
+
+.purchase{
+    margin-top: 20px;
+    border: solid rgb(156, 156, 156) 1px;
+    border-radius: 15px;
+    width: 90%;
+}
+
+.purchaseProductQuantity{
+    border: solid rgb(156, 156, 156) 1px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.datePurchase{
+    margin: 20px;
+    border-bottom: solid rgb(156, 156, 156) 1px;
+    padding-bottom: 10px;
+    font-weight: 900;
+}
+
+.purchases{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.purchasesTitle{
+    margin-top: 40px;
+    margin-left: 5%;
+}
+
+@media only screen and (max-width: 575px) {
+    .btn-secondary{
+        position: relative;
+        left: -15px;
+    }
+    
+    .productDetailText{
+        margin: 40px 20px;
+    }
+
+    .productsSugested{
+        flex-direction: column;
+    }
+}
