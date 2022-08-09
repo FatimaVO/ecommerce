@@ -1,8 +1,18 @@
 import React from 'react';
-import { Navbar, Container, Nav } from "react-bootstrap";
+import { Navbar, Container, Nav, Button } from "react-bootstrap";
 import logo from "../assets/images/smileShop.png"
+import { useNavigate } from "react-router-dom";
 
 const NavBar = () => {
+    const navigate = useNavigate();
+
+    const logout = () => {
+        localStorage.setItem("token", "");
+        navigate("/login");
+    };
+
+    const token = localStorage.getItem("token");
+
     return (
         <Navbar bg="dark" expand="lg">
             <Container>
@@ -12,7 +22,13 @@ const NavBar = () => {
                     <Nav className="me-auto">
                         <Nav.Link className="homeTextNav" href="/#/">Home</Nav.Link>
                         <Nav.Link className="purchasesTextNav" href="/#/purchases">Purchases</Nav.Link>
+                        {token ? (
+                            <Nav.Link as={Button} onClick={logout} className="logoutButton">
+                                Log Out
+                                </Nav.Link>
+                        ) : (
                         <Nav.Link className="loginTextNav" href="/#/login">Login</Nav.Link>
+                        )}
                     </Nav>
                 </Navbar.Collapse>
             </Container>
