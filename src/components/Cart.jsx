@@ -47,7 +47,7 @@ const Cart = ({ show, handleClose }) => {
                         <p className='quantityProductCart'>{product.productsInCart.quantity}</p>
                         <div className='productPriceCart'>
                             <p className='productTotalCart'>Total:</p>
-                            <p className='productPriceText'>${product.price}</p>
+                            <p className='productPriceText'>${Number((product.price)) * (product.productsInCart.quantity)}</p>
                         </div>
                     </div>
 
