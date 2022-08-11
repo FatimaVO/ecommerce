@@ -447,4 +447,8 @@
         width: 70%;
         text-align: center;
     }
+
+    .loginContainer {
+        width: 95%;
+    }
 }
