@@ -21,7 +21,6 @@ const Cart = ({ show, handleClose }) => {
 
 
     const deleteProduct = (id) => {
-        alert("Producto eliminado")
         const product = {
             id: id,
         }

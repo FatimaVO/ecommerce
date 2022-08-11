@@ -30,7 +30,6 @@ const Home = () => {
     }, []);
 
     const addProduct = (id) => {
-        alert("Producto añadido")
         const product = {
             id: id,
             quantity: 1

@@ -42,7 +42,6 @@ const ProductsDetail = () => {
   };
 
   const addProduct = () => {
-    alert("Producto añadido")
     const product = {
       id: products.id,
       quantity: counter
