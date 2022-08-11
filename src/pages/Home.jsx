@@ -19,6 +19,7 @@ const Home = () => {
     const products = useSelector((state) => state.products)
     const navigate = useNavigate();
     const [searchValue, setSearchValue] = useState("");
+
     const [categories, setCategories] = useState([]);
 
     useEffect(() => {

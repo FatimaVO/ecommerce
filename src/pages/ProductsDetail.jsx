@@ -109,7 +109,11 @@ const ProductsDetail = () => {
 
           {
             sugestedProducts.map(products => (
-              <Card className="cardProductSugested" onClick={() => navigate(`/products/${products.id}`)} key={products.id}>
+              <Card className="cardProductSugested" onClick={() => {
+                navigate(`/products/${products.id}`);
+                scroll(0, 0);
+              }} 
+              key={products.id}>
                 <Card.Img className="cardImg" variant="top" src={products.productImgs[2]} />
                 <Card.Body>
                   <Card.Title>{products.title}</Card.Title>
