@@ -6,7 +6,8 @@
 }
 
 .cardProduct {
-    height: 350px;
+    height: 380px;
+    position: relative;
 }
 
 .imgProductDetail {
@@ -119,6 +120,7 @@
     height: 34px;
     width: 40px;
     text-align: center;
+    padding-top: 4px;
 }
 
 .counter {
@@ -162,6 +164,12 @@
     margin-left: 20%;
 }
 
+.purchaseProductTitle:hover {
+    cursor: pointer;
+    color: black;
+    font-weight: 900;
+}
+
 .purchaseProductInfo {
     display: grid;
     grid-template-columns: 45% 25% 30%;
@@ -194,6 +202,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 .purchasesTitle {
@@ -219,31 +228,204 @@
     align-items: center;
 }
 
-.loginTitle{
+.loginTitle {
     text-align: center;
     margin-bottom: 40px;
+    margin-top: 20px;
+    font-weight: bold;
 }
 
-.testData{
+.testData {
     text-align: center;
+    font-weight: 900;
 }
 
-.testDataContainer{
-    background-color: rgb(225, 255, 246);
+.testDataContainer {
+    background-color: rgb(255, 241, 195);
     padding: 15px;
-    border-radius: 10px;
     margin-bottom: 30px;
 }
 
-.loginContainer{
-    border: solid rgb(221, 221, 221) 1px ;
-    padding: 30px;
-    border-radius: 10px;
+.fa-envelope,
+.fa-lock {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-.loginButton{
+.userText,
+.passwordText {
+    margin: 0;
+}
+
+.loginContainer {
+    border: solid rgb(221, 221, 221) 1px;
+    padding: 30px;
+    width: 45%;
+}
+
+.loginButton {
     width: 100%;
     align-self: center;
+}
+
+.cart {
+    padding-top: 20px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.brandAndDeleteCart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.quantityProductCart {
+    width: 45px;
+    height: 25px;
+    border: solid rgb(221, 221, 221) 1px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.productPriceCart {
+    font-weight: 900;
+    position: relative;
+    left: 60%;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.cartProducts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.offcanvas-body {
+    overflow-x: hidden;
+}
+
+.buttonDeleteCart {
+    border: none;
+    background-color: white;
+}
+
+.fa-trash-can {
+    color: red;
+    font-size: 17px;
+}
+
+.brandAndDeleteCart,
+.productTotalCart {
+    color: #747474;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.productPriceText,
+.titleProductCart {
+    color: rgb(46, 46, 46);
+    font-weight: bold;
+}
+
+.totalCart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.totalCartDiv {
+    width: 98%;
+    border-top: solid rgb(221, 221, 221) 1px;
+    padding-top: 30px;
+}
+
+.checkout {
+    width: 100%;
+    margin-left: 1%;
+    border: none;
+    background-color: #e6ad34;
+    padding: 5px;
+}
+
+.titleProductCart:hover {
+    cursor: pointer;
+}
+
+.navMenu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cartNavButton {
+    background-color: #343a40;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    border: none;
+    position: relative;
+    padding-top: 20px;
+}
+
+.counterCart {
+    position: relative;
+    top: -35px;
+    margin: 0;
+    left: 12px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #747474;
+}
+
+.cartNavButton:hover {
+    background-color: #343a40;
+    color: black;
+}
+
+.btn-dark::after {
+    border-radius: 20px;
+}
+
+.fa-user,
+.fa-store,
+.fa-cart-shopping {
+    margin-right: 10px;
+}
+
+.navbar-toggler {
+    background-color: #747474;
+}
+
+.addCartHomeButton {
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+    width: 48px;
+    height: 48px;
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    background-color: #eca305;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+}
+
+.homeContainer {
+    padding-bottom: 40px;
+}
+
+.iconCartDetail {
+    margin-left: 20px;
 }
 
 
@@ -259,5 +441,10 @@
 
     .productsSugested {
         flex-direction: column;
+    }
+
+    .nav-link {
+        width: 70%;
+        text-align: center;
     }
 }

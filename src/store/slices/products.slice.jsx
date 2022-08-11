@@ -13,7 +13,6 @@ export const productsSlice = createSlice({
     }
 });
 
-//https://ecommerce-api-react.herokuapp.com/api/v1/products?category=${id}
 
 
 export const getProductsThunk = () => (dispatch) => {

@@ -1,12 +1,14 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getPurchasesThunk } from '../store/slices/purchases.slice';
+import { useNavigate } from "react-router-dom";
 
 const Purchases = () => {
 
     const dispatch = useDispatch();
 
     const purchases = useSelector((state) => state.purchases);
+    const navigate = useNavigate();
 
     useEffect(() => {
         dispatch(getPurchasesThunk())
@@ -21,7 +23,7 @@ const Purchases = () => {
                         <div className="purchase" key={purchase.id}>
                             <div className="datePurchase">{new Date(purchase.createdAt).toDateString()}</div>
                             {purchase.cart.products?.map((product) => (
-                                <div className="purchaseProductInfo" key={product.id}>
+                                <div className="purchaseProductInfo" key={product.id} onClick={() => navigate(`/products/${product.id}`)}>
                                     <p className="purchaseProductTitle">{product.title}</p>
                                     <span className="purchaseProductQuantity">{product.productsInCart.quantity}</span>
                                     <p className="purchaseProductPrice">${product.price}</p>
